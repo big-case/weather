@@ -1,0 +1,150 @@
+import React from 'react';
+
+const Icons = (props) => {
+    <div>
+        {props.responseObj.current.condition.code} === 1000 ? {
+            <img src='./113.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1003 ? {
+            <img src='./116.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1006 ? {
+            <img src='./119.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1009 ? {
+            <img src='./122.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1030 ? {
+            <img src='./143.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1063 ? {
+            <img src='./176.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1066 ? {
+            <img src='./179.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1069 ? {
+            <img src='./182.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1072 ? {
+            <img src='./185.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1087 ? {
+            <img src='./200.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1114 ? {
+            <img src='./227.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1117 ? {
+            <img src='./230.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1135 ? {
+            <img src='./248.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1147 ? {
+            <img src='./260.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1150 ? {
+            <img src='./263.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1153 ? {
+            <img src='./266.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1168 ? {
+            <img src='./281.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1171 ? {
+            <img src='./284.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1180 ? {
+            <img src='./293.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1183 ? {
+            <img src='./296.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1186 ? {
+            <img src='./299.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1189 ? {
+            <img src='./302.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1192 ? {
+            <img src='./305.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1195 ? {
+            <img src='./308.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1198 ? {
+            <img src='./311.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1201 ? {
+            <img src='./314.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1204 ? {
+            <img src='./317.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1207 ? {
+            <img src='./320.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1210 ? {
+            <img src='./323.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1213 ? {
+            <img src='./326.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1216 ? {
+            <img src='./329.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1219 ? {
+            <img src='./332.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1222 ? {
+            <img src='./335.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1225 ? {
+            <img src='./338.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1237 ? {
+            <img src='./350.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1240 ? {
+            <img src='./353.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1243 ? {
+            <img src='./356.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1246 ? {
+            <img src='./359.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1249 ? {
+            <img src='./362.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1252 ? {
+            <img src='./365.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1255 ? {
+            <img src='./368.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1258 ? {
+            <img src='./371.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1261 ? {
+            <img src='./374.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1264 ? {
+            <img src='./377.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1273 ? {
+            <img src='./386.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1276 ? {
+            <img src='./389.png' alt='logo' />
+        }
+        : {props.responseObj.current.condition.code} === 1279 ? {
+            <img src='./392.png' alt='logo' />
+        }
+        : <img src='./395.png' alt='logo' />
+
+    </div>
+}
+
