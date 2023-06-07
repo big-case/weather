@@ -1,7 +1,7 @@
 // TODO:
 // [_] use qs to URI encode
 // [X] use axios instead of fetch api
-// [ ] error handling using axios
+// [X] error handling using axios
 // api url: `https://api.weatherapi.com/v1/current.json?key=2f15c785d72743df8e644208233105&q=${uriEncodedCity}&aqi=no`
 
 import React from 'react'
@@ -18,7 +18,6 @@ function Weather() {
     const apiCall = async (e) => {
         e.preventDefault()
         const loc = e.target.elements.loc.value;
-        // const encodedLoc = qs.stringify({q: loc});
         const url = `https://api.weatherapi.com/v1/current.json?key=2f15c785d72743df8e644208233105&q=${loc}&aqi=no`;
         // axios.get(url, qs.stringify({'q': 'loc'}))
         axios.get(url)
@@ -38,7 +37,7 @@ function Weather() {
     })
 }
 
-if (err) return alert('Location Not Found');
+if (err) return <div>'Location Not Found'</div>;
     const Weath = () => {
         return <div>
             <div className="winfo">
