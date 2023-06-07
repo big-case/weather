@@ -37,8 +37,7 @@ function Weather() {
     })
 }
 
-if (err) return (<div className="weathhead"><div className="welement">`Location Not Found`</div></div>); 
-
+if (err) return alert('Location Not Found');
     const Weath = () => {
         return <div>
             <div className="winfo">
