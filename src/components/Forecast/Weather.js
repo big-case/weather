@@ -1,38 +1,43 @@
 // TODO:
 // [_] use qs to URI encode
 // [X] use axios instead of fetch api
+// [ ] error handling using axios
 // api url: `https://api.weatherapi.com/v1/current.json?key=2f15c785d72743df8e644208233105&q=${uriEncodedCity}&aqi=no`
 
 import React from 'react'
 import { useState } from 'react'
 import "./Weather.css"
 import axios from 'axios'
+// import qs from 'qs'
 
 function Weather() {
 
     const [weather, setWeather] = useState('');
     const [city, setCity] = useState('');
-
+    const [err, setErr] = useState('');
     const apiCall = async (e) => {
         e.preventDefault()
         const loc = e.target.elements.loc.value;
         // const encodedLoc = qs.stringify(loc);
         const url = `https://api.weatherapi.com/v1/current.json?key=2f15c785d72743df8e644208233105&q=${loc}&aqi=no`;
-        const req = axios.get(url);
-        const response = await req;
+        axios.get(url)
+        .then (res => { 
         setWeather({
-            descp: response.data.current.condition.text,
-            temp: response.data.current.temp_c,
-            city: response.data.location.name,
-            humidity: response.data.current.humidity,
-            press: response.data.current.pressure_mb,
+            descp: res.data.current.condition.text,
+            temp: res.data.current.temp_c,
+            city: res.data.location.name,
+            humidity: res.data.current.humidity,
+            press: res.data.current.pressure_mb,
         })
+        setCity(res.data.location.name)
 
-        setCity(response.data.location.name)
+    })
+    .catch (err => {
+        setErr(err);
+    })
+}
 
-    }
-
- 
+if (err) return (<div className="weathhead"><div className="welement">`Location Not Found`</div></div>); 
 
     const Weath = () => {
         return <div>
@@ -56,6 +61,9 @@ function Weather() {
             </div>
         </div>
     }
+
+
+
     return (<>
         <div className="weathhead">Weather Info</div>
         <div className="mainweather">
@@ -64,7 +72,6 @@ function Weather() {
                     <input type="text" placeholder="Enter city" name="loc" />
                     <button className="bttn">Search</button>
                 </form>
-
                 {weather && <Weath />}
             </div>
         </div>

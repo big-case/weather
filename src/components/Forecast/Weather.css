@@ -43,7 +43,6 @@ button:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 1px solid rgb(8, 8, 8);
     padding: 20px;
-    box-shadow: 10px 10px 5px #aaaaaa;
     background-color: rgb(158, 166, 167);
 }
 
