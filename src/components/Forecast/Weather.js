@@ -15,7 +15,8 @@ function Weather() {
 
     const apiCall = async (e) => {
         e.preventDefault()
-        const loc = e.target.elements.loc.value
+        const loc = e.target.elements.loc.value;
+        // encodedLoc = qs.stringify(e.target.elements.loc.value)
         const url = `https://api.weatherapi.com/v1/current.json?key=2f15c785d72743df8e644208233105&q=${loc}&aqi=no`;
         const req = axios.get(url);
         const response = await req;
