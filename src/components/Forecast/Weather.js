@@ -16,7 +16,7 @@ function Weather() {
     const apiCall = async (e) => {
         e.preventDefault()
         const loc = e.target.elements.loc.value;
-        // encodedLoc = qs.stringify(e.target.elements.loc.value)
+        // const encodedLoc = qs.stringify(loc);
         const url = `https://api.weatherapi.com/v1/current.json?key=2f15c785d72743df8e644208233105&q=${loc}&aqi=no`;
         const req = axios.get(url);
         const response = await req;
@@ -37,7 +37,7 @@ function Weather() {
     const Weath = () => {
         return <div>
             <div className="winfo">
-                Weather information for {city}
+                Current Weather for {city}
                 <hr></hr>
             </div>
             <div className="Weath">
@@ -61,7 +61,7 @@ function Weather() {
         <div className="mainweather">
             <div className="weather">
                 <form onSubmit={apiCall} className="form">
-                    <input type="text" placeholder="city" name="loc" />
+                    <input type="text" placeholder="Enter city" name="loc" />
                     <button className="bttn">Search</button>
                 </form>
 
